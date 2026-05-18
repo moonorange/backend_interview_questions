@@ -44,6 +44,18 @@ What is microservice architecture, and explain benefits and drawbacks.
 Microservices is an architectural style that implements an application as a collection of small, independent services.
 The benefits of microservices include scalability, flexibility, and manageability.
 
-Scalability means that each microservice can be scaled and deployed individually based on demand. 
-Flexibility allows teams to use different technologies for different services, while manageability is enhanced because smaller services are easier to understand and maintain. 
+Scalability means that each microservice can be scaled and deployed individually based on demand.
+Flexibility allows teams to use different technologies for different services, while manageability is enhanced because smaller services are easier to understand and maintain.
 However, it's also important to consider the added complexity and challenges in communication and infrastructure that come with a microservices architecture.
+
+**Question 4:**
+
+What is the difference between SQL and NoSQL databases, and in what situations would you use one over the other?
+
+**Answer 4:**
+
+SQL databases, also known as relational databases, have a well-defined table structure with a strict schema. The relationships between tables are clearly defined, making them ideal for applications where ACID transactions and complex queries, such as JOINs, are needed. SQL databases are best suited for applications with structured data and clear relationships. Examples of SQL databases include MySQL and PostgreSQL.
+
+On the other hand, NoSQL databases are schema-less, allowing for unstructured or semi-structured data. They are ideal for applications that deal with large amounts of data where the structure might evolve over time or where performance and scalability are prioritized over strict consistency. Examples include MongoDB (document-based), Cassandra (wide-column store), and Amazon DynamoDB (key-value store).
+
+Key difference: SQL databases follow the ACID properties (Atomicity, Consistency, Isolation, Durability), while NoSQL databases tend to prioritize availability and partition tolerance.
